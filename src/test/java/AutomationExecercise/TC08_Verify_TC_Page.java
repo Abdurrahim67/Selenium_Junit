@@ -71,7 +71,7 @@ public class TC08_Verify_TC_Page {
 
     @After
     public void tearDown () {
-        //  driver.quit();
+          driver.quit();
 
     }
 

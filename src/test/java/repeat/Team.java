@@ -49,20 +49,11 @@ public class Team {
        driver.findElement(By.xpath("//input[@id=\"ap_password\" or @name=\"password\"]")).sendKeys("Amazon115436-");
        driver.findElement(By.cssSelector("[id=\"signInSubmit\"]")).click();
 
-
-
-
        //    5. başarılı bir şekilde login olduğumuz doğrulayalım.
 
        Assert.assertTrue(driver.findElement(By.cssSelector("[id=\"nav-link-accountList-nav-line-1\"]")).isDisplayed());
-
-
-
        //    6. team11 adına yeni bir liste oluşturalım
-
-
        //    7. listemizin başarılı bir şekilde oluştugunu doğrulayalım
-
        //    8. Kategori menusunden "Bilgisayarlar" secilir.
        WebElement kategoriBox= driver.findElement(By.xpath("//select[@id=\"searchDropdownBox\"]"));
        Select select=new Select(kategoriBox);
@@ -75,7 +66,7 @@ public class Team {
 
        Assert.assertTrue(actual.equals(expected));
 
-       //    10.Arama kutusuna "lenovo" yazalım ve enter tuşuna basıp arama işleminiyapalım
+       //    10.Arama kutusuna "lenovo" yazalım ve enter tuşuna basıp arama işlemini yapalım
        driver.findElement(By.cssSelector("[id='twotabsearchtextbox']")).sendKeys("lenovo"+ Keys.ENTER);
 
        //    11. arama sonuçlarının "lenovo" içerdigi bdoğrulayalım
@@ -138,5 +129,6 @@ public class Team {
        driver.findElement(By.xpath(xpath)).click();
 
    }
+
 
 }

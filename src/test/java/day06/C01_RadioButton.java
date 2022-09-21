@@ -13,8 +13,7 @@ import java.time.Duration;
 
 public class C01_RadioButton {
 /*
-            Bir class oluşturun : RadioButtonTest
-            Gerekli yapiyi olusturun ve aşağıdaki görevi tamamlayın.
+
             https://www.facebook.com adresine gidin
             Cookies’i kabul edin
             “Create an Account” button’una basin

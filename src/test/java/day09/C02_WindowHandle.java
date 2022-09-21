@@ -41,7 +41,7 @@ public class C02_WindowHandle {
         driver.get("https://amazon.com");
         String amazonWindowHandle = driver.getWindowHandle();
         //2- Url'nin amazon içerdiğini test edelim
-        String expectedUrl = driver.getCurrentUrl();
+        String expectedUrl = "amazon";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedUrl));
         //3- Yeni bir pencere açıp bestbuy anasayfasına gidelim.(https://www.bestbuy.com)
