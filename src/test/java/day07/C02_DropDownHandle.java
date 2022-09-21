@@ -47,7 +47,7 @@ oldugunu testedin
 
     @Test
     public void test1() {
-      //Arama kutusunun yanindaki kategori menusundeki kategori sayisinin45
+      //Arama kutusunun yanindaki kategori menusundeki kategori sayisinin 45
       //oldugunu testedin
 
       List<WebElement> drops = driver.findElements(By.xpath("//option"));
@@ -63,7 +63,7 @@ oldugunu testedin
       public void test2(){
 //           1.Kategori menusunden Books secenegini secin
         WebElement ddm = driver.findElement(By.xpath("//*[@id='searchDropdownBox']"));
-        ddm.sendKeys("Books");
+        ddm.sendKeys("Bücher");
 //           2.Arama kutusuna Java yazin ve aratin
         driver.findElement(By.cssSelector("input[id='twotabsearchtextbox']")).sendKeys("Java", Keys.ENTER);
 //           3.Bulunan sonuc sayisiniyazdirin

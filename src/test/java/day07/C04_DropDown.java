@@ -66,6 +66,7 @@ public class C04_DropDown {
         //Tüm dropdown değerleri(value) yazdırın
         List<WebElement> tumDddm=select.getOptions();
         //Lambda ile
+
         tumDddm.forEach(t->System.out.println(t.getText()));
         //foreach ile
         for (WebElement w:tumDddm

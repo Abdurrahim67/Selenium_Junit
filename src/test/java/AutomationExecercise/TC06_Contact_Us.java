@@ -52,7 +52,7 @@ public class TC06_Contact_Us {
 
 
         //7. Upload file
-        driver.findElement(By.cssSelector("input[type='file']")).sendKeys("C:\\Users\\HP-ZBook 3\\Desktop");
+        driver.findElement(By.cssSelector("input[type='file']")).sendKeys("C:\\Users\\HP-ZBook 3\\Desktop\\Neues Textdokument.txt");
         Thread.sleep(3000);
         //8. Click 'Submit' button
         driver.findElement(By.xpath("//*[@name='submit']")).click();

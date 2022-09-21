@@ -14,6 +14,13 @@ import java.time.Duration;
 
 public class C03_Assertions {
 
+    /*
+    asserttrue --> dogruysa onayla geç,     yanlişsa çalışma dur, hata ver, notumu goster.
+    assertFalse --> yanlışsa onayla geç,    doğruysa çalışma dur, hata ver, notumu goster
+    assertEquals --> eşitse onayla gec,   eşit değilse çalışma dur, hata ver, notumu goster
+    assertNotEquals --> eşit değilse onayla geç,    eşitse çalışma dur, hata ver, notumu goster.
+     */
+
      /*
 
     2) https://www.bestbuy.com/ Adresine gidin farkli test method’lari olusturarak asagidaki
@@ -38,7 +45,7 @@ public class C03_Assertions {
 
     @AfterClass
     public static void tearDown() {
-         driver.quit();
+        driver.quit();
 
 
     }
@@ -51,6 +58,7 @@ public class C03_Assertions {
         Assert.assertEquals(actualUrl, actualUrl);
 
     }
+
     @Test
     public void test2() {
         //○ titleTest => Sayfa başlığının “Rest” içermediğini(contains) test edin
@@ -60,6 +68,7 @@ public class C03_Assertions {
 
 
     }
+
     @Test
     public void test3() {
 
@@ -68,6 +77,7 @@ public class C03_Assertions {
         Assert.assertTrue(logo.isDisplayed());
 
     }
+
     @Test
     public void test4() {
         //○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
