@@ -6,9 +6,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
@@ -47,6 +49,8 @@ public class TC08_Verify_TC_Page {
         Assert.assertTrue(driver.findElement(By.className("features_items")).isDisplayed());
         Thread.sleep(5000);
         //7. Click on 'View Product' of first product
+        Actions actions=new Actions(driver);
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
         driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).click();
         Thread.sleep(1000);
 

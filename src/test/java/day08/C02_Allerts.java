@@ -88,6 +88,7 @@ tıklayın ve result mesajında isminizin görüntülendiğini doğrulayın.
     public void test3() {
         //3.butona tıklayın, uyarıdaki metin kutusuna isminizi yazin, OK(tamam) butonuna
         //tıklayın ve result mesajında isminizin görüntülendiğini doğrulayın.
+
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         driver.findElement(By.xpath("//*[text()='Click for JS Prompt']")).click();
         driver.switchTo().alert().sendKeys("abdurrahim");

@@ -8,7 +8,7 @@ import utilities.TestBaseBeforeAfter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class C05_FileExists extends TestBaseBeforeAfter {
+public class C05_FileExistsDownLoad extends TestBaseBeforeAfter {
             /*
 1-Tests packagenin altina bir class oluşturalim : C04_FileDownload
 2-Iki tane metod oluşturun : isExist( ) ve downloadTest( )

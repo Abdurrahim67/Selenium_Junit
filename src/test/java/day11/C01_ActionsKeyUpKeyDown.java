@@ -28,7 +28,10 @@ public class C01_ActionsKeyUpKeyDown extends TestBaseBeforeAfter {
         WebElement aramaSonucu=driver.findElement(By.xpath("(//div[@class='sg-col-inner'])[1]"));
         Assert.assertTrue(aramaSonucu.isDisplayed());
     }
-
+/*
+JavascriptExecutor js= (JavascriptExecutor) driver;
+js.executeScript("scrollBy(0,200)")
+ */
 
 
 

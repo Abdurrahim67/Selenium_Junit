@@ -1,0 +1,6 @@
+        Robot robot = new Robot();
+        robot.mouseWheel(8);
+
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_END);
+

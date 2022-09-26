@@ -35,9 +35,8 @@ public class C01_Allerts {
         // - Click for js Alert butonuna tıklayalım
         driver.findElement(By.xpath("//*[text()='Click for JS Alert']")).click();
         // - Tıkladıktan sonra çıkan uyarı mesajına (alerte) tamam diyelim
-        Thread.sleep(2000);
         driver.switchTo().alert().accept();
-        Thread.sleep(2000);
+
 
 
     }
